@@ -20,6 +20,7 @@ export default function MultipleHero(props: Props) {
         height: "100%",
         width: "100%",
         maxHeight: `${props.maxHeight}px`,
+        minHeight: "200px",
       }}
     >
       <Swiper
@@ -34,6 +35,7 @@ export default function MultipleHero(props: Props) {
         className="mySwiper h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[50vh] xl:h-[100vh]"
         style={{
           maxHeight: `${props.maxHeight}px`,
+          minHeight: "200px",
         }}
       >
         {props.url?.map((urlItem) => (
