@@ -42,7 +42,7 @@ export default function Header() {
   }, [renderSearchDiv]);
 
   return (
-    <header className="h-26 fixed w-full">
+    <header className="h-26 fixed z-10 w-full">
       <div className="bg-maroon flex h-[45%] items-center justify-center gap-x-3 px-2">
         <IoMdAirplane size={20} className="text-white" />
         <span className="text-center text-xs font-semibold text-white">
@@ -50,7 +50,7 @@ export default function Header() {
         </span>
         <IoMdAirplane size={20} className="text-white" />
       </div>
-      <div className="bg-green h-[55%] border border-white">
+      <div className="bg-green h-[55%] border-t border-white">
         <nav className="mx-auto flex h-full w-full max-w-screen-xl items-center justify-between px-12 lg:px-6">
           <img src="logo.png" className="w-[145px]" />
           <LinksCardsMenu />
