@@ -62,7 +62,7 @@ export default function Header() {
       {renderSearchDiv && (
         <div
           ref={searchRef}
-          className={`animate__animated flex h-14 items-center border-b border-gray-300 shadow-sm shadow-neutral-300 ${
+          className={`animate__animated flex h-14 items-center border-b border-gray-300 bg-white shadow-sm shadow-neutral-300 ${
             showSearchDiv ? "animate__fadeIn" : "animate__fadeOut"
           }`}
         >
