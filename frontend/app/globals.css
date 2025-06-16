@@ -194,3 +194,31 @@ body {
     @apply !border-b !border-gray-50/30 !px-2 !text-white [&_svg]:!text-white;
   }
 }
+
+/*Buscados Component Styles*/
+
+@layer components {
+  .buscadosSection {
+    @apply mx-auto my-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
+  }
+
+  .buscadosSection__text {
+    @apply text-maroon text-2xl font-semibold;
+  }
+
+  .buscadosSection__buscadosSwiper {
+    @apply w-full;
+  }
+
+  .buscadosSwiper__buscadosSlide {
+    @apply !flex items-center justify-center;
+  }
+
+  .buscadosSlide__buscadosItemDiv {
+    @apply flex w-fit flex-col gap-y-4;
+  }
+
+  .buscadosItemDiv__text {
+    @apply text-maroon text-center text-xl font-semibold;
+  }
+}
