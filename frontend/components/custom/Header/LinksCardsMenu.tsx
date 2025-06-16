@@ -15,14 +15,14 @@ export default function LinksCardsMenu() {
         {linksCardMenu.map((item: any) => (
           <div key={`link_${item.menu}`} className="h-full">
             <NavigationMenuItem className="h-full">
-              <NavigationMenuTrigger className="[&_svg]:hidden h-14 bg-transparent text-white data-[state=open]:hover:text-[#800320] cursor-pointer border-b border-6 border-transparent data-[state=open]:hover:border-b-[#800320]">
+              <NavigationMenuTrigger className="linksCardMenu__trigger">
                 {item.menu}
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="!w-[720px] grid grid-cols-3 gap-x-6 gap-y-4 auto-rows-[38px]">
+              <NavigationMenuContent className="linksCardMenu__content">
                 {item.submenu.map((item: any) => (
                   <NavigationMenuLink
                     key={`submenu_${item.menu}`}
-                    className="text-[#800320] font-semibold cursor-pointer"
+                    className="content__link"
                   >
                     {item.menu}
                   </NavigationMenuLink>

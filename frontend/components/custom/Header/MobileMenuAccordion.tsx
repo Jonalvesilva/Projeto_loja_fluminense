@@ -15,7 +15,7 @@ export default function MobileMenuAccordion() {
           <AccordionItem
             key={`accordion_${item.menu}`}
             value={`item-${index}`}
-            className="border-b border-gray-50/30 px-2 text-white [&_svg]:text-white"
+            className="mobileMenu__accordionItem"
           >
             <AccordionTrigger>{item.menu}</AccordionTrigger>
             <AccordionContent>

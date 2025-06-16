@@ -42,16 +42,16 @@ export default function Header() {
   }, [renderSearchDiv]);
 
   return (
-    <header className="h-26 fixed z-10 w-full">
-      <div className="bg-maroon flex h-[45%] items-center justify-center gap-x-3 px-2">
+    <header className="header">
+      <div className="header__topDiv">
         <IoMdAirplane size={20} className="text-white" />
-        <span className="text-center text-xs font-semibold text-white">
+        <span className="topDiv__span">
           FRETE GRÁTIS PARA TODO O BRASIL NAS COMPRAS ACIMA DE R$ 499,99
         </span>
         <IoMdAirplane size={20} className="text-white" />
       </div>
-      <div className="bg-green h-[55%] border-t border-white">
-        <nav className="mx-auto flex h-full w-full max-w-screen-xl items-center justify-between px-12 lg:px-6">
+      <div className="header__bottomDiv">
+        <nav className="bottomDiv__nav">
           <img src="logo.png" className="w-[145px]" />
           <LinksCardsMenu />
           <ProfileButtons search={{ setShowSearchDiv, showSearchDiv }} />
@@ -62,11 +62,11 @@ export default function Header() {
       {renderSearchDiv && (
         <div
           ref={searchRef}
-          className={`animate__animated flex h-14 items-center border-b border-gray-300 bg-white shadow-sm shadow-neutral-300 ${
+          className={`header__divSearch animate__animated ${
             showSearchDiv ? "animate__fadeIn" : "animate__fadeOut"
           }`}
         >
-          <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between gap-x-12">
+          <div className="divSearch__div">
             <Input
               className="!border-gray-400/70"
               placeholder="Digite aqui o que deseja buscar"
