@@ -222,3 +222,54 @@ body {
     @apply text-maroon text-center text-xl font-semibold;
   }
 }
+
+/*LancamentosCard Component Styles*/
+@layer components {
+  .lancamentosSection {
+    @apply mx-auto my-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
+  }
+
+  .lancamentosSection__title {
+    @apply text-maroon text-2xl font-semibold;
+  }
+
+  .lancamentosSection__swiper {
+    @apply w-full;
+  }
+
+  .lancamentosSection__swiperSlide {
+    @apply !flex items-center justify-center;
+  }
+}
+
+/*LancamentosCard Component Styles*/
+
+@layer components {
+  .lancamentoCard {
+    @apply flex w-fit flex-col justify-between gap-y-4;
+  }
+
+  .lancamentoCard__lancamentoCardContent {
+    @apply flex flex-col justify-between px-2;
+  }
+
+  .lancamentoCardContent__title {
+    @apply text-center text-lg font-semibold text-gray-600;
+  }
+
+  .lancamentoCardContent__lancamentoCardSubContent {
+    @apply flex flex-col items-center gap-y-2;
+  }
+  .lancamentoCardSubContent__price {
+    @apply text-lg font-semibold text-green-500;
+  }
+  .lancamentoCardSubContent__parcel {
+    @apply text-gray-600;
+  }
+  .lancamentoCardSubContent__btn {
+    @apply mt-4 w-full cursor-pointer rounded-none !bg-green-700 !text-white hover:!bg-green-700/70 hover:text-white;
+  }
+  .lancamentoCardSubContent__plusIcon {
+    @apply relative top-[1px] !h-3 text-white;
+  }
+}
