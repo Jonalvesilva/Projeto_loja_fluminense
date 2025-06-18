@@ -10,7 +10,7 @@ import { linksCardMenu } from "@/constants/linksCardsMenu";
 
 export default function LinksCardsMenu() {
   return (
-    <NavigationMenu className="hidden lg:block">
+    <NavigationMenu className="linksCardMenu hidden lg:block">
       <NavigationMenuList className="flex gap-x-2">
         {linksCardMenu.map((item: any) => (
           <div key={`link_${item.menu}`} className="h-full">
@@ -22,7 +22,7 @@ export default function LinksCardsMenu() {
                 {item.submenu.map((item: any) => (
                   <NavigationMenuLink
                     key={`submenu_${item.menu}`}
-                    className="content__link"
+                    className="linksCardMenu__menuLink"
                   >
                     {item.menu}
                   </NavigationMenuLink>

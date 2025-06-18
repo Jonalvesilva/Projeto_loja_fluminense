@@ -135,27 +135,27 @@ body {
     @apply h-26 fixed z-10 w-full;
   }
 
-  .header__topDiv {
+  .header__top {
     @apply bg-maroon flex h-[45%] items-center justify-center gap-x-3 px-2;
   }
 
-  .topDiv__span {
+  .header__topSpan {
     @apply text-center text-xs font-semibold text-white;
   }
 
-  .header__bottomDiv {
+  .header__bottom {
     @apply bg-green h-[55%] border-t border-white;
   }
 
-  .bottomDiv__nav {
+  .header__bottomNav {
     @apply mx-auto flex h-full w-full max-w-screen-xl items-center justify-between px-12 lg:px-6;
   }
 
-  .header__divSearch {
+  .header__search {
     @apply flex h-14 items-center border-b border-gray-300 bg-white shadow-sm shadow-neutral-300;
   }
 
-  .divSearch__div {
+  .header__searchWrapper {
     @apply mx-auto flex w-full max-w-screen-lg items-center justify-between gap-x-12;
   }
 }
@@ -171,7 +171,7 @@ body {
     @apply grid !w-[720px] auto-rows-[38px] grid-cols-3 gap-x-6 gap-y-4;
   }
 
-  .content__link {
+  .linksCardMenu__menuLink {
     @apply cursor-pointer font-semibold text-[#800320];
   }
 }
@@ -182,7 +182,7 @@ body {
   .mobileMenuContent {
     @apply !bg-green !gap-0 !overflow-y-auto !border-none;
   }
-  .mobileMenuContent__divSearch {
+  .mobileMenuContent__search {
     @apply flex w-full gap-x-2 border-b border-gray-50/30 px-2 py-4;
   }
 }
@@ -190,7 +190,7 @@ body {
 /*MobileMenuAccordion Component Styles*/
 
 @layer components {
-  .mobileMenu__accordionItem {
+  .mobileMenuAccordion__item {
     @apply !border-b !border-gray-50/30 !px-2 !text-white [&_svg]:!text-white;
   }
 }
@@ -223,7 +223,7 @@ body {
   }
 }
 
-/*LancamentosCard Component Styles*/
+/*Lancamentos Component Styles*/
 @layer components {
   .lancamentosSection {
     @apply mx-auto my-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
@@ -270,6 +270,207 @@ body {
     @apply mt-4 w-full cursor-pointer rounded-none !bg-green-700 !text-white hover:!bg-green-700/70 hover:text-white;
   }
   .lancamentoCardSubContent__plusIcon {
+    @apply relative top-[1px] !h-3 text-white;
+  }
+}
+
+/*Outlet Component Styles*/
+@layer components {
+  .outletSection {
+    @apply mx-auto my-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
+  }
+
+  .outletSection__title {
+    @apply text-maroon text-2xl font-semibold;
+  }
+
+  .outletSection__swiper {
+    @apply w-full;
+  }
+
+  .outletSection__swiperSlide {
+    @apply !flex items-center justify-center;
+  }
+}
+
+/*OutletCard Component Styles*/
+
+@layer components {
+  .outletCard {
+    @apply flex w-fit flex-col justify-between gap-y-4;
+  }
+
+  .outletCard__outletWrapperImage {
+    @apply relative;
+  }
+
+  .outletWrapperImage__text {
+    @apply border-maroon text-maroon absolute left-0 top-0 border px-1 text-sm font-semibold;
+  }
+
+  .outletWrapperImage__img {
+    @apply object-contain;
+  }
+
+  .outletCard__outletCardContent {
+    @apply flex flex-col justify-between px-2;
+  }
+
+  .outletCardContent__title {
+    @apply text-center text-lg font-semibold text-gray-600;
+  }
+
+  .outletCardContent__outletCardSubContent {
+    @apply flex flex-col items-center gap-y-2;
+  }
+
+  .outletCardSubContent__outletCardSubContentPriceWrapper {
+    @apply flex;
+  }
+  .outletCardSubContent__price {
+    @apply text-lg font-semibold text-green-500;
+  }
+  .outletCardSubContent__parcel {
+    @apply text-gray-600;
+  }
+  .outletCardSubContent__btn {
+    @apply mt-4 w-full cursor-pointer rounded-none !bg-green-700 !text-white hover:!bg-green-700/70 hover:text-white;
+  }
+  .outletCardSubContent__plusIcon {
+    @apply relative top-[1px] !h-3 text-white;
+  }
+}
+
+/*MaisVendidosFeminino Component Styles*/
+@layer components {
+  .maisVendidosFemininoSection {
+    @apply mx-auto my-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
+  }
+
+  .maisVendidosFemininoSection__title {
+    @apply text-maroon text-2xl font-semibold;
+  }
+
+  .maisVendidosFemininoSection__swiper {
+    @apply w-full;
+  }
+
+  .maisVendidosFemininoSection__swiperSlide {
+    @apply !flex items-center justify-center;
+  }
+}
+
+/*MaisVendidosFemininoCard Component Styles*/
+
+@layer components {
+  .maisVendidosFemininoCard {
+    @apply flex w-fit flex-col justify-between gap-y-4;
+  }
+
+  .maisVendidosFemininoCard__maisVendidosFemininoWrapperImage {
+    @apply relative;
+  }
+
+  .maisVendidosFemininoWrapperImage__text {
+    @apply border-maroon text-maroon absolute left-0 top-0 border px-1 text-sm font-semibold;
+  }
+
+  .maisVendidosFemininoWrapperImage__img {
+    @apply object-contain;
+  }
+
+  .maisVendidosFemininoCard__maisVendidosFemininoCardContent {
+    @apply flex flex-col justify-between px-2;
+  }
+
+  .maisVendidosFemininoCardContent__title {
+    @apply text-center text-lg font-semibold text-gray-600;
+  }
+
+  .maisVendidosFemininoCardContent__maisVendidosFemininoCardSubContent {
+    @apply flex flex-col items-center gap-y-2;
+  }
+
+  .maisVendidosFemininoCardSubContent__maisVendidosFemininoCardSubContentPriceWrapper {
+    @apply flex;
+  }
+  .maisVendidosFemininoCardSubContent__price {
+    @apply text-lg font-semibold text-green-500;
+  }
+  .maisVendidosFemininoCardSubContent__parcel {
+    @apply text-gray-600;
+  }
+  .maisVendidosFemininoCardSubContent__btn {
+    @apply mt-4 w-full cursor-pointer rounded-none !bg-green-700 !text-white hover:!bg-green-700/70 hover:text-white;
+  }
+  .maisVendidosFemininoCardSubContent__plusIcon {
+    @apply relative top-[1px] !h-3 text-white;
+  }
+}
+
+/*MaisVendidosInfantil Component Styles*/
+@layer components {
+  .maisVendidosInfantilSection {
+    @apply mx-auto my-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
+  }
+
+  .maisVendidosInfantilSection__title {
+    @apply text-maroon text-2xl font-semibold;
+  }
+
+  .maisVendidosInfantilSection__swiper {
+    @apply w-full;
+  }
+
+  .maisVendidosInfantilSection__swiperSlide {
+    @apply !flex items-center justify-center;
+  }
+}
+
+/*MaisVendidosFemininoCard Component Styles*/
+
+@layer components {
+  .maisVendidosInfantilCard {
+    @apply flex w-fit flex-col justify-between gap-y-4;
+  }
+
+  .maisVendidosInfantilCard__maisVendidosInfantilWrapperImage {
+    @apply relative;
+  }
+
+  .maisVendidosInfantilWrapperImage__text {
+    @apply border-maroon text-maroon absolute left-0 top-0 border px-1 text-sm font-semibold;
+  }
+
+  .maisVendidosInfantilWrapperImage__img {
+    @apply object-contain;
+  }
+
+  .maisVendidosInfantilCard__maisVendidosInfantilCardContent {
+    @apply flex flex-col justify-between px-2;
+  }
+
+  .maisVendidosInfantilCardContent__title {
+    @apply text-center text-lg font-semibold text-gray-600;
+  }
+
+  .maisVendidosInfantilCardContent__maisVendidosInfantilCardSubContent {
+    @apply flex flex-col items-center gap-y-2;
+  }
+
+  .maisVendidosInfantilCardSubContent__maisVendidosInfantilCardSubContentPriceWrapper {
+    @apply flex;
+  }
+  .maisVendidosInfantilCardSubContent__price {
+    @apply text-lg font-semibold text-green-500;
+  }
+  .maisVendidosInfantilCardSubContent__parcel {
+    @apply text-gray-600;
+  }
+  .maisVendidosInfantilCardSubContent__btn {
+    @apply mt-4 w-full cursor-pointer rounded-none !bg-green-700 !text-white hover:!bg-green-700/70 hover:text-white;
+  }
+  .maisVendidosInfantilCardSubContent__plusIcon {
     @apply relative top-[1px] !h-3 text-white;
   }
 }

@@ -24,7 +24,7 @@ export default function MobileMenu() {
           </SheetTitle>
         </SheetHeader>
         {/*Div Search*/}
-        <div className="mobileMenuContent__divSearch">
+        <div className="mobileMenuContent__search">
           <Input
             className="!border-gray-400/70 bg-white"
             placeholder="Buscar"

@@ -10,14 +10,16 @@ import {
 export default function MobileMenuAccordion() {
   return (
     <ScrollArea className="flex-1">
-      <Accordion type="single" collapsible>
+      <Accordion type="single" collapsible className="mobileMenuAccordion">
         {linksCardMenu.map((item: any, index: number) => (
           <AccordionItem
             key={`accordion_${item.menu}`}
             value={`item-${index}`}
-            className="mobileMenu__accordionItem"
+            className="mobileMenuAccordion__item"
           >
-            <AccordionTrigger>{item.menu}</AccordionTrigger>
+            <AccordionTrigger className="cursor-pointer">
+              {item.menu}
+            </AccordionTrigger>
             <AccordionContent>
               <ul>
                 {item.submenu.map((subItem: any) => (

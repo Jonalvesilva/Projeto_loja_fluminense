@@ -43,15 +43,15 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="header__topDiv">
+      <div className="header__top">
         <IoMdAirplane size={20} className="text-white" />
-        <span className="topDiv__span">
+        <span className="header__topSpan">
           FRETE GRÁTIS PARA TODO O BRASIL NAS COMPRAS ACIMA DE R$ 499,99
         </span>
         <IoMdAirplane size={20} className="text-white" />
       </div>
-      <div className="header__bottomDiv">
-        <nav className="bottomDiv__nav">
+      <div className="header__bottom">
+        <nav className="header__bottomNav">
           <img src="logo.png" className="w-[145px]" />
           <LinksCardsMenu />
           <ProfileButtons search={{ setShowSearchDiv, showSearchDiv }} />
@@ -62,11 +62,11 @@ export default function Header() {
       {renderSearchDiv && (
         <div
           ref={searchRef}
-          className={`header__divSearch animate__animated ${
+          className={`header__search animate__animated ${
             showSearchDiv ? "animate__fadeIn" : "animate__fadeOut"
           }`}
         >
-          <div className="divSearch__div">
+          <div className="header__searchWrapper">
             <Input
               className="!border-gray-400/70"
               placeholder="Digite aqui o que deseja buscar"
