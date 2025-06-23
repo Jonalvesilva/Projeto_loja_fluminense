@@ -5,4 +5,7 @@ export const homeBannersLink = [
   "banners/4.png",
   "banners/5.png",
   "banners/6.gif",
+  "banners/7.webp",
+  "banners/8.png",
+  "banners/9.png",
 ];
