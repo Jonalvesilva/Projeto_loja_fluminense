@@ -411,7 +411,7 @@ body {
 /*MaisVendidosInfantil Component Styles*/
 @layer components {
   .maisVendidosInfantilSection {
-    @apply mx-auto my-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
+    @apply mx-auto mb-14 mt-8 flex w-full max-w-screen-lg flex-col items-center gap-y-12;
   }
 
   .maisVendidosInfantilSection__title {
@@ -427,7 +427,7 @@ body {
   }
 }
 
-/*MaisVendidosFemininoCard Component Styles*/
+/*MaisVendidosInfantilCard Component Styles*/
 
 @layer components {
   .maisVendidosInfantilCard {
@@ -479,7 +479,7 @@ body {
 
 @layer components {
   .footer {
-    @apply bg-green my-8;
+    @apply bg-green;
   }
   .footer__top {
     @apply mx-auto flex w-full max-w-screen-lg flex-col items-center gap-y-12 py-8;
