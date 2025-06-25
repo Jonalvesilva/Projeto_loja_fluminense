@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FaPlus } from "react-icons/fa6";
 import { useRef, useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function MaisVendidosInfantilCard({ item }: { item: any }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -49,13 +50,15 @@ export default function MaisVendidosInfantilCard({ item }: { item: any }) {
           <p className="maisVendidosInfantilCardSubContent__parcel">
             {item.parcel}
           </p>
-          <Button
-            variant="outline"
-            className="maisVendidosInfantilCardSubContent__btn"
-          >
-            Comprar
-            <FaPlus className="maisVendidosInfantilCardSubContent__plusIcon" />
-          </Button>
+          <Link href={`/${item.id}`} className="w-full">
+            <Button
+              variant="outline"
+              className="maisVendidosInfantilCardSubContent__btn"
+            >
+              Comprar
+              <FaPlus className="maisVendidosInfantilCardSubContent__plusIcon" />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

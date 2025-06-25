@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FaPlus } from "react-icons/fa6";
 import { useRef, useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function OutletCard({ item }: { item: any }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -39,10 +40,12 @@ export default function OutletCard({ item }: { item: any }) {
             <p className="outletCardSubContent__price">{item.newPrice}</p>
           </div>
           <p className="outletCardSubContent__parcel">{item.parcel}</p>
-          <Button variant="outline" className="outletCardSubContent__btn">
-            Comprar
-            <FaPlus className="outletCardSubContent__plusIcon" />
-          </Button>
+          <Link href={`/${item.id}`} className="w-full">
+            <Button variant="outline" className="outletCardSubContent__btn">
+              Comprar
+              <FaPlus className="outletCardSubContent__plusIcon" />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

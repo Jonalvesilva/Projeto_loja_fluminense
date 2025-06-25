@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FaPlus } from "react-icons/fa6";
 import { useRef, useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function LancamentosCard({ item }: { item: any }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -32,10 +33,12 @@ export default function LancamentosCard({ item }: { item: any }) {
         <div className="lancamentoCardContent__lancamentoCardSubContent">
           <p className="lancamentoCardSubContent__price">{item.price}</p>
           <p className="lancamentoCardSubContent__parcel">{item.parcel}</p>
-          <Button variant="outline" className="lancamentoCardSubContent__btn">
-            Comprar
-            <FaPlus className="lancamentoCardSubContent__plusIcon" />
-          </Button>
+          <Link href={`/${item.id}`} className="w-full">
+            <Button variant="outline" className="lancamentoCardSubContent__btn">
+              Comprar
+              <FaPlus className="lancamentoCardSubContent__plusIcon" />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
