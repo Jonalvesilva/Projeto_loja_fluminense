@@ -52,7 +52,7 @@ export default function Header() {
       </div>
       <div className="header__bottom">
         <nav className="header__bottomNav">
-          <img src="logo.png" className="w-[145px]" />
+          <img src="/logo.png" className="w-[145px]" />
           <LinksCardsMenu />
           <ProfileButtons search={{ setShowSearchDiv, showSearchDiv }} />
           <MobileMenu />
