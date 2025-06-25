@@ -8,7 +8,7 @@ export default function MaisVendidosInfantilCard({ item }: { item: any }) {
 
   useEffect(() => {
     const allSlides = document.querySelectorAll(
-      ".maisVendidosFemininoCard-content",
+      ".maisVendidosInfantilCard-content",
     );
     let max = 0;
 
