@@ -1,5 +1,6 @@
 export const outletImgLink = [
   {
+    id: 37,
     name: "Parka Fluminense Umbro 23/24",
     src: "/outlet/parka-1.webp",
     oldPrice: "R$ 799,99",
@@ -8,6 +9,7 @@ export const outletImgLink = [
     discount: "-42%",
   },
   {
+    id: 38,
     name: "Camisa Fluminense OF3 Superbet 2024 Torcedor S/N Umbro",
     src: "/outlet/camisa-masc-torcedor-of3-2024-umbro-61244-1.webp",
     oldPrice: "R$ 349,99",
@@ -16,6 +18,7 @@ export const outletImgLink = [
     discount: "-37%",
   },
   {
+    id: 39,
     name: "Camisa Fluminense Fem OF3 2024 Jogadora Umbro",
     src: "/outlet/camisa-fem-jogadora-of3-2024-umbro-61245-1.webp",
     oldPrice: "R$ 399,99",
@@ -24,6 +27,7 @@ export const outletImgLink = [
     discount: "-32%",
   },
   {
+    id: 40,
     name: "Camisa Fluminense Juvenil OF3 Superbet 2024 Umbro",
     src: "/outlet/camisa-juvenil-of3-2024-umbro-61248-1.webp",
     oldPrice: "R$ 279,99",
@@ -32,6 +36,7 @@ export const outletImgLink = [
     discount: "-31%",
   },
   {
+    id: 41,
     name: "Vestido Fluminense Defy Braziline",
     src: "/outlet/vestido-braziline-defy-003006143-1.webp",
     oldPrice: "R$ 189,90",
@@ -40,6 +45,7 @@ export const outletImgLink = [
     discount: "-42%",
   },
   {
+    id: 42,
     name: "Camisa Fluminense Goleiro Verde Oficial 2024 Umbro",
     src: "/outlet/camisa-goleiro-masculina-2024-verde-lisa-1.webp",
     oldPrice: "R$ 349,99",
@@ -48,6 +54,7 @@ export const outletImgLink = [
     discount: "-42%",
   },
   {
+    id: 43,
     name: "Camisa Fluminense Goleiro Laranja Oficial 2024 Umbro",
     src: "/outlet/camisa-goleiro-masculina-2024-laranja-lisa-1.webp",
     oldPrice: "R$ 349,99",
@@ -56,6 +63,7 @@ export const outletImgLink = [
     discount: "-42%",
   },
   {
+    id: 44,
     name: "Camisa Fluminense OF1 Superbet 2024 Torcedor S/N Umbro",
     src: "/outlet/camisa-of1-torcedor-superbet-61230-1.webp",
     oldPrice: "R$ 349,99",
@@ -64,6 +72,7 @@ export const outletImgLink = [
     discount: "-42%",
   },
   {
+    id: 45,
     name: "Camisa Fluminense OF2 Superbet 2024 Torcedor S/N Umbro",
     src: "/outlet/camisa-of2-torcedor-superbet-2024-umbro-61233-1.webp",
     oldPrice: "R$ 349,99",
@@ -72,6 +81,7 @@ export const outletImgLink = [
     discount: "-33%",
   },
   {
+    id: 46,
     name: "Camisa Fluminense Fem OF3 2024 Torcedora Umbro",
     src: "/outlet/camisa-fem-torcedora-of3-2024-umbro-61246-1.webp",
     oldPrice: "R$ 299,99",
@@ -80,6 +90,7 @@ export const outletImgLink = [
     discount: "-23%",
   },
   {
+    id: 47,
     name: "Regata Fluminense OF1 Superbet 2024 Umbro",
     src: "/outlet/regata-of1-superbet-umbro-2024-61234-1.webp",
     oldPrice: "R$ 299,99",
@@ -88,6 +99,7 @@ export const outletImgLink = [
     discount: "-33%",
   },
   {
+    id: 48,
     name: "Regata Fluminense OF2 Superbet 2024 Umbro",
     src: "/outlet/regata-of2-superbet-umbro-2024-1.webp",
     oldPrice: "R$ 299,99",
