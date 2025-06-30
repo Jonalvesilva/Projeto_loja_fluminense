@@ -5,6 +5,7 @@ import Lancamentos from "@/components/custom/Lancamentos/Lancamentos";
 import MaisVendidosFeminino from "@/components/custom/MaisVendidosFeminino/MaisVendidosFeminino";
 import MaisVendidosInfantil from "@/components/custom/MaisVendidosInfantil/MaisVendidosInfantil";
 import Outlet from "@/components/custom/Outlet/Outlet";
+import WhatsappBottomButton from "@/components/custom/WhatsappBottomButton/WhatsappBottomButton";
 import { homeBannersLink } from "@/constants/homeBannersLink";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       />
       <MaisVendidosFeminino />
       <MaisVendidosInfantil />
+      <WhatsappBottomButton />
     </section>
   );
 }
